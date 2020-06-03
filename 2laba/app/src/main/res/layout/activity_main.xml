@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:padding="20dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_calcul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CALCULATE"
+        android:textSize="10pt"
+        android:layout_margin="12dp" />
+
+    <EditText
+        android:id="@+id/et_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first integer number"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/et_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second integer number"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="3dp" >
+
+        <TextView
+            android:id="@+id/tv_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operation:"
+            android:textSize="8pt" />
+
+        <RadioGroup
+            android:id="@+id/rg_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/rb_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:checked="true"
+                android:buttonTint="@color/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/rb_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:buttonTint="@color/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/rb_mul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:buttonTint="@color/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/rb_div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:buttonTint="@color/colorPrimary" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate"
+        android:textColor="#ffffff"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp" >
+    </Button>
+
+</LinearLayout>
